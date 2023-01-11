@@ -14,7 +14,7 @@ async function ProductsExtraStaticIndex() {;
 
   return (
     <main>
-      <h1>Static products</h1>
+      <h1>Server products</h1>
       <section>
         {products.map((product) => {
           return (
