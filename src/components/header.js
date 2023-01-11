@@ -1,25 +1,33 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header>
       <nav>
-        <a href="/">Home</a>
+        <Link href="/">Home</Link>
         <ul>
           <li>
-            <a href="/about">About (pages)</a>
-          </li>
-          <li>
-            <a href="/about-extra">About Extra (app)</a>
-          </li>
-          <li>
-            <a href="#">Products</a>
+            <Link href="#">Products</Link>
             <ul>
               <li>
-                <a href="/products">List CSR (pages)</a>
+                <Link href="/products">List CSR (pages)</Link>
               </li>
               <li>
-                <a href="/products-extra">List CSR (app)</a>
+                <Link href="/products/static">List SSG (pages)</Link>
+              </li>
+              <li>
+                <Link href="/products-extra">List CSR (app)</Link>
+              </li>
+              <li>
+                <Link href="/products-extra/static">List SSG (app)</Link>
               </li>
             </ul>
+          </li>
+          <li>
+            <Link href="/about">About (pages)</Link>
+          </li>
+          <li>
+            <Link href="/about-extra">About (app)</Link>
           </li>
         </ul>
       </nav>
