@@ -19,6 +19,9 @@ export default function Header() {
                 <Link href="/products/server">List SSR (pages)</Link>
               </li>
               <li>
+                <Link href="/products/incremental">List ISR (pages)</Link>
+              </li>
+              <li>
                 <Link href="/products-extra">List CSR (app)</Link>
               </li>
               <li>
@@ -26,6 +29,9 @@ export default function Header() {
               </li>
               <li>
                 <Link href="/products-extra/server">List SSR (app)</Link>
+              </li>
+              <li>
+                <Link href="/products-extra/incremental">List ISR (app)</Link>
               </li>
             </ul>
           </li>
