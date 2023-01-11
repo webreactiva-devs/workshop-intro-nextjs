@@ -505,3 +505,7 @@ blockquote footer {
     line-height: var(--line-height);
     padding: 1.5rem 0;
 }
+
+nav {
+    margin-bottom: 0;
+}

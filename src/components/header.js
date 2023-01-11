@@ -16,10 +16,16 @@ export default function Header() {
                 <Link href="/products/static">List SSG (pages)</Link>
               </li>
               <li>
+                <Link href="/products/server">List SSR (pages)</Link>
+              </li>
+              <li>
                 <Link href="/products-extra">List CSR (app)</Link>
               </li>
               <li>
                 <Link href="/products-extra/static">List SSG (app)</Link>
+              </li>
+              <li>
+                <Link href="/products-extra/server">List SSR (app)</Link>
               </li>
             </ul>
           </li>
