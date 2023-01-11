@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Footer from "../components/footer";
+import Header from "../components/header";
 
 export default function Home() {
   return (
@@ -10,42 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <nav>
-          <a href="/">Home</a>
-          <ul>
-            <li>
-              <a href="/about">About (pages)</a>
-            </li>
-            <li>
-              <a href="/about-extra">About Extra (app)</a>
-            </li>
-            <li>
-              <a href="#">Dropdown</a>
-              <ul>
-                <li>
-                  <a href="#">Sublink with a long name</a>
-                </li>
-                <li>
-                  <a href="#">Short sublink</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <h1>
-          Taller <i>malandriner</i> y <u>potente</u>
-        </h1>
-        <p>
-          Aprende Next.js con <mark>las manos sobre el teclado</mark>
-        </p>
-        <br />
-        <p>
-          <a href="#">
-            <b>Sigue leyendo &rarr;</b>
-          </a>
-        </p>
-      </header>
+      <Header></Header>
       <main>
         <hr />
         <section>
@@ -59,12 +26,7 @@ export default function Home() {
         </section>
         <hr />
       </main>
-      <footer>
-        <hr />
-        <p>
-          <a href="https://webreactiva.com">Web Reactiva ↗</a>
-        </p>
-      </footer>
+      <Footer></Footer>
     </>
   );
 }
