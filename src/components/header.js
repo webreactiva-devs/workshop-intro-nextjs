@@ -11,13 +11,13 @@ export default function Header() {
             <a href="/about-extra">About Extra (app)</a>
           </li>
           <li>
-            <a href="#">Dropdown</a>
+            <a href="#">Products</a>
             <ul>
               <li>
-                <a href="#">Sublink with a long name</a>
+                <a href="/products">List CSR (pages)</a>
               </li>
               <li>
-                <a href="#">Short sublink</a>
+                <a href="/products-extra">List CSR (app)</a>
               </li>
             </ul>
           </li>
