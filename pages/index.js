@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Footer from "../components/footer";
-import Header from "../components/header";
 
 export default function Home() {
   return (
@@ -12,7 +10,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header></Header>
+      <header>
+        <h1>
+          Taller <i>malandriner</i> y <u>potente</u>
+        </h1>
+        <p>
+          Aprende Next.js con <mark>las manos sobre el teclado</mark>
+        </p>
+        <br />
+        <p>
+          <a href="#">
+            <b>Sigue leyendo &rarr;</b>
+          </a>
+        </p>
+      </header>
       <main>
         <hr />
         <section>
@@ -26,7 +37,6 @@ export default function Home() {
         </section>
         <hr />
       </main>
-      <Footer></Footer>
     </>
   );
 }

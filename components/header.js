@@ -23,18 +23,6 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <h1>
-        Taller <i>malandriner</i> y <u>potente</u>
-      </h1>
-      <p>
-        Aprende Next.js con <mark>las manos sobre el teclado</mark>
-      </p>
-      <br />
-      <p>
-        <a href="#">
-          <b>Sigue leyendo &rarr;</b>
-        </a>
-      </p>
     </header>
   );
 }

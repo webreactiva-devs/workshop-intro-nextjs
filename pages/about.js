@@ -1,8 +1,8 @@
 function about () {
   return (
-    <div>
+    <main>
       Hola, este es la típica página de Sobre mi
-    </div>
+    </main>
   );
 }
 
