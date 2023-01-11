@@ -4,13 +4,13 @@ async function getProducts() {
   const response = await fetch("https://dummyjson.com/products", {
     cache: "force-cache",
   });
-  const data = response.json();
+  const data = await response.json();
   return data.products;
 }
 
 async function ProductsExtraStaticIndex() {;
 
-  const products  = getProducts()
+  const products = await getProducts()
 
   return (
     <main>
