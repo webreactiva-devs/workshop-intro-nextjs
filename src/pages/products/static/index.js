@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 function ProductsStaticIndex({products}) {
 
   return (
@@ -19,7 +17,7 @@ function ProductsStaticIndex({products}) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const response = await fetch("https://dummyjson.com/products");
   const data = await response.json();
   const products = data.products;
