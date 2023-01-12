@@ -17,7 +17,7 @@ async function getProducts() {
   return data.products;
 }
 
-async function ProductsExtraStaticIndex() {;
+async function ProductsExtraStaticIndex() {
 
   const products = await getProducts()
 
