@@ -3,6 +3,9 @@ Taller en directo con suscriptores de Web Reactiva para conocer mejor qué es Ne
 
 🏁 [Empieza aquí](https://github.com/webreactiva-devs/workshop-intro-nextjs/wiki).
 
+![taller-nextjs](https://user-images.githubusercontent.com/1122071/212497321-dcac7c5e-9bd3-4954-b650-425a7f9a2536.png)
+
+
 # Readme oficial de Next.js
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
