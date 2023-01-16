@@ -2,8 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    appDir: true
-  }
-}
+    appDir: true,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**.dummyjson.com"
+      },
+    ],
+  },
+};
 
 module.exports = nextConfig

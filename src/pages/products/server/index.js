@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function ProductsServerIndex({ products }) {
   return (
     <main>
@@ -6,7 +8,9 @@ function ProductsServerIndex({ products }) {
         {products.map((product) => {
           return (
             <aside key={product.id}>
-              <img src={product.thumbnail} />
+              <div style={{width: '100%', height: '200px', position: 'relative'}}>
+                <Image src={product.thumbnail} fill={true} style={{objectFit: "contain"}}  />
+              </div>
               <h3>{product.title}</h3>
             </aside>
           );
