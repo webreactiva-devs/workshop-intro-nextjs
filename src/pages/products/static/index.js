@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function ProductsStaticIndex({products}) {
 
   return (
@@ -7,8 +9,10 @@ function ProductsStaticIndex({products}) {
         {products.map((product) => {
           return (
             <aside key={product.id}>
-              <img src={product.thumbnail} />
-              <h3>{product.title}</h3>
+              <Link href={`/products/static/${product.id}`}>
+                <img src={product.thumbnail} />
+                <h3>{product.title}</h3>
+              </Link>
             </aside>
           );
         })}

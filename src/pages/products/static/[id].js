@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function ProductDetailStaticIndex({ product }) {
   return (
     <main>
@@ -5,7 +7,7 @@ function ProductDetailStaticIndex({ product }) {
       <article>
         <aside>
           <p>
-            {product.brand} / {product.category}
+            <Link href="/products/static">Products</Link> / {product.brand} / {product.category}
           </p>
         </aside>
       </article>
