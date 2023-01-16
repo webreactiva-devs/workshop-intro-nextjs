@@ -1,19 +1,28 @@
 import Link from "next/link";
 
-function ProductDetailStaticIndex({ product }) {
+async function getProductImageRandom(id) {
+  console.log(`http://localhost:3001/api/product-image-random?id=${id}`);
+  const response = await fetch(`http://localhost:3001/api/product-image-random?id=${id}`);
+  const data = await response.json();
+  return data.image;
+}
+
+function ProductDetailStaticIndex({ product, productImage }) {
+
   return (
     <main>
       <h1>{product.title}</h1>
       <article>
         <aside>
           <p>
-            <Link href="/products/static">Products</Link> / {product.brand} / {product.category}
+            <Link href="/products/static">Products</Link> / {product.brand} /{" "}
+            {product.category}
           </p>
         </aside>
       </article>
       <section>
         <aside>
-          <img alt={product.title} src={product.thumbnail} height="150" />
+          <img alt={product.title} src={productImage} height="150" />
           <h3>{product.title}</h3>
           <p>{product.description}</p>
           <header>
@@ -35,9 +44,12 @@ export async function getStaticProps({ params }) {
   const data = await response.json();
   const product = data;
 
+  const productImage = await getProductImageRandom(product.id);
+
   return {
     props: {
       product,
+      productImage,
     },
   };
 }
