@@ -8,6 +8,12 @@ async function getProduct(id) {
   return data;
 }
 
+async function getProductImageRandom(id) {
+  const response = await fetch(`http://localhost:3001/api/product-image-random?id=${id}`);
+  const data = await response.json();
+  return data.image;
+}
+
 export async function generateStaticParams() {
   const response = await fetch("https://dummyjson.com/products");
   const data = await response.json();
@@ -19,6 +25,7 @@ export async function generateStaticParams() {
 
 async function ProductDetailStaticIndex({ params }) {
   const product = await getProduct(params.id);
+  const productImage = await getProductImageRandom(params.id)
   return (
     <main>
       <h1>{product.title}</h1>
@@ -32,7 +39,7 @@ async function ProductDetailStaticIndex({ params }) {
       </article>
       <section>
         <aside>
-          <img alt={product.title} src={product.thumbnail} height="150" />
+          <img alt={product.title} src={productImage} height="150" />
           <h3>{product.title}</h3>
           <p>{product.description}</p>
           <header>
