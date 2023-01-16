@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 async function getProductImageRandom(id) {
-  console.log(`http://localhost:3001/api/product-image-random?id=${id}`);
   const response = await fetch(`http://localhost:3001/api/product-image-random?id=${id}`);
   const data = await response.json();
   return data.image;
