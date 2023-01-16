@@ -29,7 +29,6 @@ function ProductDetailStaticIndex({ product }) {
 }
 
 export async function getStaticProps({params}) {
-  console.log(`https://dummyjson.com/products/${params.id}`);
   const response = await fetch(`https://dummyjson.com/products/${params.id}`);
   const data = await response.json();
   const product = data;
@@ -44,7 +43,7 @@ export async function getStaticProps({params}) {
 export async function getStaticPaths() {
   return {
     paths: [{ params: { id: "1" } }, { params: { id: "2" } }],
-    fallback: false,
+    fallback: 'blocking'
   };
 }
 
