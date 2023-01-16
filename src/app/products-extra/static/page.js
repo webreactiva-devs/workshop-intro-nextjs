@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 async function getProducts() {
@@ -19,8 +20,10 @@ async function ProductsExtraStaticIndex() {;
         {products.map((product) => {
           return (
             <aside key={product.id}>
-              <img src={product.thumbnail} />
-              <h3>{product.title}</h3>
+              <Link href={`/products-extra/static/${product.id}`}>
+                <img src={product.thumbnail} />
+                <h3>{product.title}</h3>
+              </Link>
             </aside>
           );
         })}
