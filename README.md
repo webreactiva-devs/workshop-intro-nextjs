@@ -3,6 +3,8 @@ Taller en directo con suscriptores de Web Reactiva para conocer mejor qué es Ne
 
 🏁 [Empieza aquí](https://github.com/webreactiva-devs/workshop-intro-nextjs/wiki).
 
+🎥 [Taller resuelto en vídeo](https://premium.danielprimo.io/cursos/curso-de-introduccion-a-nextjs)
+
 ![taller-nextjs](https://user-images.githubusercontent.com/1122071/212497321-dcac7c5e-9bd3-4954-b650-425a7f9a2536.png)
 
 
