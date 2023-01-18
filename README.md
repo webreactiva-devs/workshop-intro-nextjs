@@ -1,7 +1,7 @@
 # Taller de introducción a Next.js en [Web Reactiva](https://webreactiva.com/)
 Taller en directo con suscriptores de Web Reactiva para conocer mejor qué es Next.js y cuáles son sus puntos fuertes.
 
-🏁 [Empieza aquí](https://github.com/webreactiva-devs/workshop-intro-nextjs/wiki).
+🏁 [Empieza aquí](https://github.com/webreactiva-devs/workshop-intro-nextjs/wiki)
 
 🎥 [Taller resuelto en vídeo](https://premium.danielprimo.io/cursos/curso-de-introduccion-a-nextjs)
 
